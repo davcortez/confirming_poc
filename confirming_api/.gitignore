@@ -1,0 +1,48 @@
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Basics
+*.py[cod]
+__pycache__
+*#
+
+# Django-related
+db.sqlite3
+
+# Logs
+logs
+*.log
+pip-log.txt
+npm-debug.log*
+mock_file*
+latest.dump*
+kpi_extract*
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+*,cover
+.hypothesis/
+kpi_extract_20*
+
+# Translations
+*.mo
+*.pot
+
+# Vim
+*~
+*.swp
+*.swo
+
+#PyCharm
+.idea/
+
+# Virtual environments
+.env
+/.dir-locals.el
+/TAGS
+/node_modules/
