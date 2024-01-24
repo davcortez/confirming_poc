@@ -1,6 +1,6 @@
 variable "region" {
-    type = string
-    default = "us-east-1"
+  type    = string
+  default = "us-east-1"
 }
 
 variable "function_name" {
@@ -20,6 +20,6 @@ variable "runtime" {
 }
 
 variable "environment_variables" {
-  type = map(string)
+  type    = map(string)
   default = {}
 }

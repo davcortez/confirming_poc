@@ -1,5 +1,5 @@
 variable "region" {
-  type = string
+  type    = string
   default = "us-east-1"
 }
 
@@ -21,11 +21,11 @@ variable "hash_key" {
 }
 
 variable "attributes" {
-  type = map(string)
+  type    = map(string)
   default = {}
 }
 
 variable "environment_variables" {
-  type = map(string)
+  type    = map(string)
   default = {}
 }
