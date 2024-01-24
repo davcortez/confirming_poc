@@ -8,6 +8,7 @@ session = boto3.Session(region_name=os.environ['REGION'])
 dynamodb_client = session.client('dynamodb')
 
 
+
 def lambda_handler(event, context):
     try:
         print("event ->" + str(event))

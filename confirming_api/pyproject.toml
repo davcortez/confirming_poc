@@ -11,6 +11,7 @@ python = "^3.10"
 fastapi = "^0.109.0"
 mangum = "^0.17.0"
 uvicorn = "^0.27.0"
+boto3 = "^1.34.26"
 
 
 [build-system]
