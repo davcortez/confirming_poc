@@ -46,3 +46,6 @@ kpi_extract_20*
 /.dir-locals.el
 /TAGS
 /node_modules/
+
+# Zip
+*.zip
