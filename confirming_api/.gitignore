@@ -49,3 +49,6 @@ kpi_extract_20*
 
 # Zip
 *.zip
+
+# Dependencies
+/dependencies
