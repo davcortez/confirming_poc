@@ -56,9 +56,9 @@ resource "aws_lambda_function" "lambda_function" {
   role          = aws_iam_role.LambdaRole.arn
   handler       = var.handler
   runtime       = var.runtime
+}
 
-  environment {
-    variables = {}
-  }
-
+resource "aws_lambda_function_url" "lambda_function_url" {
+  function_name      = aws_lambda_function.lambda_function.arn
+  authorization_type = "NONE"
 }
