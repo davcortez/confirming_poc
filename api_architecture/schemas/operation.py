@@ -15,7 +15,7 @@ class OperationType(int, Enum):
     CONFIRMING = 1
 
 
-class Operation(BaseModel):
+class OperationSchema(BaseModel):
     id: UUID
     user_id: UUID
     operation_type: OperationType
