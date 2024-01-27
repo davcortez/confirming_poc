@@ -8,6 +8,10 @@ resource "aws_dynamodb_table" "dynamodb_table" {
     type = "S"
   }
 
+  server_side_encryption {
+    enabled = true
+  }
+
   tags = {
     Name        = "dynamodb_table"
     Environment = "testing"
