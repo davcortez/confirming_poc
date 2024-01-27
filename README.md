@@ -7,6 +7,21 @@ A PoC for confirming
 - Export the AWS_REGION
 - zip the lambda code using `zip` tool. Example: `zip lambda.zip *py`
 <!-- BEGIN_TF_DOCS -->
+
+## Examples (local)
+POST /operation
+
+`curl -X POST "http://127.0.0.1:8000/operation" -H "accept: application/json" -H "Content-Type: application/json" -d '{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "user_id": "550e8400-e29b-41d4-a716-446655440000",
+  "operation_type": 1,
+  "invoices": [],
+  "currency": "USD",
+  "creation_dt": "2024-01-27",
+  "status": 1,
+  "finish_date": "2024-02-10"
+}'`
+
 ## Requirements
 
 | Name | Version |
@@ -30,15 +45,7 @@ No resources.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_attributes"></a> [attributes](#input\_attributes) | n/a | `map(string)` | `{}` | no |
-| <a name="input_environment_variables"></a> [environment\_variables](#input\_environment\_variables) | n/a | `map(string)` | `{}` | no |
-| <a name="input_filename"></a> [filename](#input\_filename) | n/a | `string` | n/a | yes |
-| <a name="input_function_name"></a> [function\_name](#input\_function\_name) | n/a | `string` | n/a | yes |
-| <a name="input_hash_key"></a> [hash\_key](#input\_hash\_key) | n/a | `string` | n/a | yes |
-| <a name="input_region"></a> [region](#input\_region) | n/a | `string` | `"us-east-1"` | no |
-| <a name="input_table_name"></a> [table\_name](#input\_table\_name) | n/a | `string` | n/a | yes |
+No inputs.
 
 ## Outputs
 
