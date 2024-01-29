@@ -4,6 +4,7 @@ dist-lambda:
 	cd dependencies && zip ../lambda.zip -r .
 	zip lambda.zip -u main.py
 	zip lambda.zip -u schemas/* -x 'schemas/__pycache__/*'
+	zip lambda.zip -u db/* -x 'db/__pycache__/*'
 clean:
 	rm -rf dependencies/
 	rm lambda.zip
